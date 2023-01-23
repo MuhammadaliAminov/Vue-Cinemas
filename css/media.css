@@ -1,0 +1,93 @@
+@media screen and (max-width:1140px) {}
+@media screen and (max-width:1366px) {}
+@media screen and (max-width:1290px) {}
+@media screen and (max-width:1140px) {
+    .films__cards {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+@media screen and (max-width:992px) {
+    .collection__cards {
+        overflow-x: auto;
+        column-gap: 30px;
+    }
+
+    .collection__card {
+        flex-shrink: 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .nav__list {
+        display: none;
+    }
+
+    .nav__menu {
+        width: 40px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav__line{
+        width: 40px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        border-radius: 10px;
+        transition: 500ms;
+    }
+
+    .nav__line:nth-of-type(2) {
+        transform: translateY(-10px);
+        width: 30px;
+    }
+    .nav__line:nth-of-type(3) {
+        transform: translateY(10px);
+        width: 20px;
+    }
+
+    .nav__menu:hover .nav__line:nth-of-type(2) {
+        transform: translateY(0) rotate(45deg);
+        width: 40px;
+    }
+    .nav__menu:hover .nav__line:nth-of-type(3) {
+        transform: translateY(0) rotate(315deg);
+        width: 40px;
+        transition-delay: 0.25s;
+    }
+    .nav__menu:hover .nav__line:first-of-type {
+        transform: translateX(150%);
+    }
+
+    .nav {
+        padding: 20px 0;
+    }
+
+    .series__item:nth-of-type(2) {
+        grid-column: 4 span;
+        grid-row: 1 span;
+    }
+    .series__item:nth-of-type(3),
+    .series__item:nth-of-type(4),
+    .series__item:nth-of-type(5),
+    .series__item:nth-of-type(6) {
+        grid-column: 2 span;
+    }
+
+}
+@media screen and (max-width:736px) {
+    .header__banner {
+        object-position: 88%;
+    }
+}
+@media screen and (max-width:684px) {}
+@media screen and (max-width:640px) {}
+@media screen and (max-width:576px) {}
+@media screen and (max-width:414px) {}
+@media screen and (max-width:375px) {}
+@media screen and (max-width:360px) {}
+@media screen and (max-width:320px) {}
